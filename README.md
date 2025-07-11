@@ -66,6 +66,14 @@ Key highlights of this upgrade:
 | 🔲     | All RPC error codes correct (legacy/new edge cases)                  |       |
 | 🔲     | Manual code review: consensus diffs                                  |       |
 
+## High Level Objectives
+
+| Status | Task                                                                 | Notes |
+|:------:|:---------------------------------------------------------------------|:------|
+| 🔲     | Define Mainnet Activation                                            |       |
+| 🔲     | Prepare Electrum Changes                                             |       |
+| 🔲     | Release Mainnet Core Wallet Version                                  |       |
+
 ## Current Status
 
 **All items are pending initial smoke and regression testing.**  
