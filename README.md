@@ -72,7 +72,7 @@ Key highlights of this upgrade:
 |:------:|:---------------------------------------------------------------------|:------|
 | 🔲     | Define Mainnet Activation                                            |       |
 | 🔲     | Prepare Electrum Changes                                             |       |
-| 🔲     | Release Mainnet Core Wallet Version                                  |       |
+| 🔲     | Release Mainnet Core Wallet v3.0.0                                   |       |
 
 ## Current Status
 
