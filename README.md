@@ -39,15 +39,15 @@ Key highlights of this upgrade:
 
 | Status | Task                                                                 | Notes |
 |:------:|:---------------------------------------------------------------------|:------|
-| 🔲     | AuxPoW activates at correct block/time                               |       |
-| 🔲     | MeowPoW block acceptance after activation                            |       |
-| 🔲     | AuxPoW (Scrypt) block acceptance after activation                    |       |
-| 🔲     | 50/50 split: AuxPoW and MeowPoW enforced over time                   |       |
-| 🔲     | LWMA retarget logic (difficulty) works as expected                   |       |
-| 🔲     | Stratum pool testing(AuxPoW, Scrypt)                                 |       |
-| 🔲     | MeowPoW pool mining                                                  |       |
-| 🔲     | Dual mining: concurrent Scrypt (AuxPoW) and MeowPoW                  |       |
-| 🔲     | Litecoin pool merged mining with Meowcoin                            |       |
+| 🟢     | AuxPoW activates at correct block/time                               |       |
+| 🟢     | MeowPoW block acceptance after activation                            |       |
+| 🟢     | AuxPoW (Scrypt) block acceptance after activation                    |       |
+| 🟢     | 50/50 split: AuxPoW and MeowPoW enforced over time                   |       |
+| 🟡     | LWMA retarget logic (difficulty) works as expected                   |       |
+| 🟡     | Stratum pool testing(AuxPoW, Scrypt)                                 |       |
+| 🟡     | MeowPoW pool mining                                                  |       |
+| 🟢     | Dual mining: concurrent Scrypt (AuxPoW) and MeowPoW                  |       |
+| 🟢     | Litecoin pool merged mining with Meowcoin                            |       |
 | 🔲     | Wallet compatibility (legacy and new)                                |       |
 | 🔲     | Sync node from genesis (legacy blocks)                               |       |
 | 🔲     | Validate legacy blocks with AuxPoW-enabled node                      |       |
