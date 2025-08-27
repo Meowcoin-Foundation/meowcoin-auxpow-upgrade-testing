@@ -44,35 +44,35 @@ Key highlights of this upgrade:
 | 🟢     | AuxPoW (Scrypt) block acceptance after activation                    |       |
 | 🟢     | 50/50 split: AuxPoW and MeowPoW enforced over time                   |       |
 | 🟡     | LWMA retarget logic (difficulty) works as expected                   |       |
-| 🟡     | Stratum pool testing(AuxPoW, Scrypt)                                 |       |
-| 🟡     | MeowPoW pool mining                                                  |       |
+| 🟢     | Stratum pool testing(AuxPoW, Scrypt)                                 |       |
+| 🟢     | MeowPoW pool mining                                                  |       |
 | 🟢     | Dual mining: concurrent Scrypt (AuxPoW) and MeowPoW                  |       |
 | 🟢     | Litecoin pool merged mining with Meowcoin                            |       |
-| 🔲     | Wallet compatibility (legacy and new)                                |       |
-| 🔲     | Sync node from genesis (legacy blocks)                               |       |
-| 🔲     | Validate legacy blocks with AuxPoW-enabled node                      |       |
+| 🟡     | Wallet compatibility (legacy and new)                                |       |
+| 🟡     | Sync node from genesis (legacy blocks)                               |       |
+| 🟢     | Validate legacy blocks with AuxPoW-enabled node                      |       |
 | 🔲     | RPC: all consensus/mining/asset calls work for both block types      |       |
 | 🔲     | getblocktemplate returns correct for both mining algos               |       |
 | 🔲     | getblock, getblockheader, getrawtransaction, etc, on new block types |       |
-| 🔲     | Asset creation, transfer pre- and post-AuxPoW                        |       |
-| 🔲     | Asset transfer under high network load                               |       |
-| 🔲     | Wallet: rescan, recovery, key import (pre-/post-upgrade)             |       |
-| 🔲     | UTXO set: consistency checks after upgrade and reindex               |       |
-| 🔲     | Clean node upgrade from previous version                             |       |
-| 🔲     | Legacy wallet.dat loads                                              |       |
+| 🟡     | Asset creation, transfer pre- and post-AuxPoW                        |       |
+| 🟢     | Asset transfer under high network load                               |       |
+| 🟡     | Wallet: rescan, recovery, key import (pre-/post-upgrade)             |       |
+| 🟡     | UTXO set: consistency checks after upgrade and reindex               |       |
+| 🟢     | Clean node upgrade from previous version                             |       |
+| 🟢     | Legacy wallet.dat loads                                              |       |
 | 🔲     | Reorg handling with mixed block types (AuxPoW/MeowPoW, assets)       |       |
-| 🔲     | Network performance under mining load                                |       |
+| 🟢     | Network performance under mining load                                |       |
 | 🔲     | Sync and operation on low-end/old hardware                           |       |
 | 🔲     | All RPC error codes correct (legacy/new edge cases)                  |       |
-| 🔲     | Manual code review: consensus diffs                                  |       |
+| 🟡     | Manual code review: consensus diffs                                  |       |
 
 ## High Level Objectives
 
 | Status | Task                                                                 | Notes |
 |:------:|:---------------------------------------------------------------------|:------|
-| 🔲     | Define Mainnet Activation                                            |       |
+| 🟡     | Define Mainnet Activation                                            |       |
 | 🔲     | Prepare Electrum Changes                                             |       |
-| 🔲     | Release Mainnet Core Wallet v3.0.0                                   |       |
+| 🟡     | Release Mainnet Core Wallet v3.0.0                                   |       |
 
 ## Current Status
 
