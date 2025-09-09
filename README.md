@@ -42,37 +42,37 @@ Key highlights of this upgrade:
 | 🟢     | AuxPoW activates at correct block/time                               |       |
 | 🟢     | MeowPoW block acceptance after activation                            |       |
 | 🟢     | AuxPoW (Scrypt) block acceptance after activation                    |       |
-| 🟢     | 50/50 split: AuxPoW and MeowPoW enforced over time                   |       |
-| 🟡     | LWMA retarget logic (difficulty) works as expected                   |       |
+| 🟢     | 50/50 split: AuxPoW and MeowPoW enforced over time                   | T=120 because dual-algo, achieves TS=60 overall      |
+| 🟢     | LWMA retarget logic (difficulty) works as expected                   | N=45 because of overall network volatility, can be increased at a later time      |
 | 🟢     | Stratum pool testing(AuxPoW, Scrypt)                                 |       |
 | 🟢     | MeowPoW pool mining                                                  |       |
 | 🟢     | Dual mining: concurrent Scrypt (AuxPoW) and MeowPoW                  |       |
 | 🟢     | Litecoin pool merged mining with Meowcoin                            |       |
-| 🟡     | Wallet compatibility (legacy and new)                                |       |
-| 🟡     | Sync node from genesis (legacy blocks)                               |       |
+| 🟢     | Wallet compatibility (legacy and new)                                |       |
+| 🟢     | Sync node from genesis (legacy blocks)                               |       |
 | 🟢     | Validate legacy blocks with AuxPoW-enabled node                      |       |
-| 🔲     | RPC: all consensus/mining/asset calls work for both block types      |       |
-| 🔲     | getblocktemplate returns correct for both mining algos               |       |
-| 🔲     | getblock, getblockheader, getrawtransaction, etc, on new block types |       |
-| 🟡     | Asset creation, transfer pre- and post-AuxPoW                        |       |
+| 🟢     | RPC: all consensus/mining/asset calls work for both block types      |       |
+| 🟢     | getblocktemplate returns correct for both mining algos               | GBT for Meowpow, getauxblock for Scrypt (supports both `target` and `_target`)      |
+| 🟢     | getblock, getblockheader, getrawtransaction, etc, on new block types |       |
+| 🟢     | Asset creation, transfer pre- and post-AuxPoW                        |       |
 | 🟢     | Asset transfer under high network load                               |       |
-| 🟡     | Wallet: rescan, recovery, key import (pre-/post-upgrade)             |       |
-| 🟡     | UTXO set: consistency checks after upgrade and reindex               |       |
+| 🟢     | Wallet: rescan, recovery, key import (pre-/post-upgrade)             |       |
+| 🟢     | UTXO set: consistency checks after upgrade and reindex               |       |
 | 🟢     | Clean node upgrade from previous version                             |       |
 | 🟢     | Legacy wallet.dat loads                                              |       |
-| 🔲     | Reorg handling with mixed block types (AuxPoW/MeowPoW, assets)       |       |
+| 🟢     | Reorg handling with mixed block types (AuxPoW/MeowPoW, assets)       |       |
 | 🟢     | Network performance under mining load                                |       |
-| 🔲     | Sync and operation on low-end/old hardware                           |       |
-| 🔲     | All RPC error codes correct (legacy/new edge cases)                  |       |
-| 🟡     | Manual code review: consensus diffs                                  |       |
+| 🟢     | Sync and operation on low-end/old hardware                           |       |
+| 🟢     | All RPC error codes correct (legacy/new edge cases)                  |       |
+| 🟢     | Manual code review: consensus diffs                                  |       |
 
 ## High Level Objectives
 
 | Status | Task                                                                 | Notes |
 |:------:|:---------------------------------------------------------------------|:------|
-| 🟡     | Define Mainnet Activation                                            |       |
-| 🔲     | Prepare Electrum Changes                                             |       |
-| 🟡     | Release Mainnet Core Wallet v3.0.0                                   |       |
+| 🟢     | Define Mainnet Activation                                            | Block 1614560      |
+| 🟡     | Prepare Electrum Changes                                             | PRs ready      |
+| 🟡     | Release Mainnet Core Wallet v3.0.1                                   | Pending      |
 
 ## Current Status
 
